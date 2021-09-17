@@ -1,0 +1,655 @@
+body {
+    background: #191919;
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+
+
+
+  
+  .showcase::before {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/pexels-lisa-861090.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+  }
+  
+  
+  
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+  }
+  
+  .content .logo {
+    height: 400px;
+    width: 400px;
+  }
+  
+  .content .title {
+    font-size: 3.2rem;
+    margin-top: 1rem;
+    transform: translatex(25px);
+  }
+  
+  .content .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-2 {
+   text-align: center;
+  }
+  
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .bg-light {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .bg-dark {
+    background: #333;
+    color: #f4f4f4;
+  }
+  
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Small Screens */
+  @media (max-width: 560px) {
+    .showcase::after {
+      height: 50vh;
+    }
+  
+    .content {
+      top: 5%;
+      margin-top: 5px;
+    }
+  
+    .content .logo {
+      height: 140px;
+      width: 140px;
+    }
+  
+    .content .title {
+        transform: translateX(-5px);
+        font-size: 1rem;
+    }
+
+    .content .text {
+      display: none;
+    }
+  
+    .grid-3,
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .services div {
+      border-bottom: #333 dashed 1px;
+      padding: 1.2rem 1rem;
+    }
+ 
+    .box {
+        display: none;
+    }
+
+  }
+  
+  /* Landscape */
+  @media (max-height: 500px) {
+    .content .title,
+    .content .text {
+      display: none;
+    }
+  
+    .content {
+      top: 0;
+    }
+
+    }
+  
+
+    
+
+
+    footer {
+      background: #191919;
+      color: #fff;
+      margin: 0;
+      @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+      font-family: 'Open Sans', sans-serif;
+   }
+    footer .centered {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+   }
+    footer .centered .footer-logo {
+      width: 15%;
+   }
+    footer .centered .footer-logo img.logo {
+      padding: 30px 20px 10px 20px;
+      max-width: 100%;
+   }
+    footer .centered .footer-contact {
+      width: 20%;
+      padding-top: 10px;
+   }
+    footer .centered .footer-navigation {
+      width: 60%;
+      padding-top: 10px;
+   }
+    footer .centered .footer-navigation .footer-links-holder {
+      width: 33.33333%;
+      position: relative;
+      float: left;
+      margin: 0;
+   }
+    footer .centered .footer-navigation .footer-links-holder .footer-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      -webkit-transition: max-height 0.5s;
+      transition: max-height 0.5s;
+   }
+    footer .bottom-bar {
+      position: relative;
+      text-align: center;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      background: #000;
+      padding: 15px 0;
+      margin-top: 10px;
+   }
+   /* Responsive Tablet Sizes */
+    @media only screen and (max-width: 749px) {
+      footer .centered {
+        flex-wrap: wrap;
+     }
+      footer .centered .footer-logo {
+        max-width: 250px;
+        width: 50%;
+     }
+      footer .centered .footer-contact {
+        width: 50%;
+        padding: 0 20px;
+     }
+      footer .centered .footer-navigation {
+        width: 100%;
+     }
+      footer .centered .footer-navigation .footer-links-holder {
+        padding: 0 20px;
+     }
+   }
+   /* Responsive Mobile Sizes */
+    @media only screen and (max-width: 500px) {
+      footer .centered .footer-logo {
+        width: 100%;
+        margin: 0 auto;
+     }
+      footer .centered .footer-contact {
+        width: 100%;
+     }
+      footer .centered .footer-navigation .footer-links-holder {
+        width: 100%;
+        padding: 0;
+     }
+      footer .centered .footer-navigation .footer-links-holder h3 {
+        margin: 0;
+        padding: 10px 20px;
+        border-top: #000 1px solid;
+        cursor: pointer;
+     }
+      footer .centered .footer-navigation .footer-links-holder h3::after {
+       /* Down Arrows */
+        margin-right: 10px;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 7px;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+        -webkit-transition: transform 0.5s;
+        transition: transform 0.5s;
+     }
+      footer .centered .footer-navigation .footer-links-holder .footer-links {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+     }
+      footer .centered .footer-navigation .footer-links-holder.active h3::after {
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+     }
+      footer .centered .footer-navigation .footer-links-holder.active .footer-links {
+        max-height: 10000px;
+     }
+   }
+   /* Social Icons */
+    .social {
+      text-align: center;
+      transform: translateY(50px);
+   }
+    .social a {
+      display: inline-block;
+      padding: 7px;
+      width: 35px;
+      height: 35px;
+      margin: 0 2px;
+      background: #fff;
+      border-radius: 50%;
+      vertical-align: middle;
+   }
+    .social a:hover {
+      background: #65c2ed;
+   }
+    .social a.linkedin {
+      padding: 4px;
+   }
+    .social a svg .face, .social a svg .twit, .social a svg .link {
+      fill: #000;
+   }
+   /* Typography */
+    footer h3 {
+      font-weight: lighter;
+      font-style: italic;
+      margin-bottom: 0;
+   }
+    footer p, footer li {
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 10px 0;
+   }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: color 0.5s, background 0.5s;
+      transition: color 0.5s, background 0.5s;
+   }
+    footer a:hover {
+      color: #65c2ed;
+   }
+   /* Misc CSS */
+    .clearfix:before, .clearfix:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      clear: both;
+   }
+    body {
+      margin: 0;
+   }
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+    
+
+
+
+
+
+
+
+   .field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    background-color: #191919;
+    overflow: hidden;
+    animation: roomAppears 8s infinite linear;
+  }
+  
+  .coffee {
+    position: relative;
+    width: 52px;
+    height: 68px;
+    background-color: #000000;
+    border-radius: 50%;
+    border-left: 22px solid #562800;
+    border-right: 22px solid #562800;
+    z-index: 2;
+    animation: coffeePulses 1.2s infinite linear, coffeeBoils 8s infinite linear;
+  }
+  
+  .coffee::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -12px;
+    width: 7px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-left: 3px solid #ffffff;
+    transform: rotate(45deg);
+  }
+  
+  .weed {
+    position: absolute;
+    bottom: 0;
+    width: 6px;
+    height: 100px;
+    background-color: #5f8011;
+    transform-origin: bottom;
+    animation: weedGrows 4s infinite linear, weedFadesOut 8s infinite linear;
+  }
+  
+  .weed--1 {
+    left: 20%;
+  }
+  
+  .weed--2 {
+    right: 20%;
+  }
+  
+  .weed__leaf {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #5f8011;
+    border: 0;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+  }
+  
+  .weed__leaf--top-left {
+    top: -19px;
+    left: -17px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .weed__leaf--top-right {
+    top: -19px;
+    right: -17px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+  }
+  
+  .weed__leaf--left {
+    top: 20px;
+    left: -30px;
+  }
+  
+  .weed__leaf--right {
+    top: 40px;
+    right: -30px;
+    transform: rotate(90deg);
+  }
+  
+  .cup {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 162px;
+    margin: auto;
+    background-color: #ffffff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 111px;
+    border-bottom-right-radius: 111px;
+    z-index: 3;
+    animation: cupAppears 8s infinite linear;
+  }
+  
+  .cup::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -44px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 40%;
+    border: 20px solid #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .splash {
+    position: absolute;
+    bottom: 160px;
+    width: 10px;
+    height: 20px;
+    border: 10px solid rgba(255, 255, 255, 0);
+    border-top: 16px solid #562800;
+    border-radius: 50%;
+    border-bottom: 0;
+    z-index: 1;
+  }
+  
+  .splash--1 {
+    left: calc(50% - 40px);
+    animation: leftSplashFlies 8s infinite linear;
+  }
+  
+  .splash--2 {
+    right: calc(50% - 40px);
+    animation: rightSplashFlies 8s infinite linear;
+  }
+  
+  @keyframes coffeePulses {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes weedGrows {
+    0% {
+      transform: scale(1);
+    }
+    15% {
+      transform: scale(1.5);
+    }
+    25% {
+      transform: scale(1.5);
+    }
+    40% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(2);
+    }
+    65% {
+      transform: scale(2.5);
+    }
+    75% {
+      transform: scale(2.5);
+    }
+    90% {
+      transform: scale(3);
+    }
+    100% {
+      transform: scale(3);
+    }
+  }
+  
+  @keyframes weedFadesOut {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes roomAppears {
+    0% {
+      background-color: #191919;
+    }
+    45% {
+      background-color: #191919;
+    }
+    50% {
+      background-color: #191919;
+    }
+    100% {
+      background-color: #191919;
+    }
+  }
+  
+  @keyframes cupAppears {
+    0% {
+      transform: translateY(500px);
+    }
+    50% {
+      transform: translateY(500px);
+    }
+    55% {
+      transform: translateY(0);
+    }
+    70% {
+      transform: translateY(0) scale(1);
+    }
+    75% {
+      transform: translateY(0) scale(1.1);
+    }
+    100% {
+      transform: translateY(0) scale(1.1);
+    }
+  }
+  
+  @keyframes coffeeBoils {
+    0% {
+      top: 0;
+    }
+    45% {
+      top: 0;
+    }
+    50% {
+      top: -50px;
+    }
+    60% {
+      top: -50px;
+    }
+    61% {
+      top: 60px;
+    }
+    100% {
+      top: 60px;
+    }
+  }
+  
+  @keyframes leftSplashFlies {
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    61% {
+      opacity: 1;
+    }
+    61% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    63% {
+      opacity: 1;
+      transform: rotate(-45deg) translate(0, -80px);
+    }
+    64% {
+      transform: rotate(-45deg) translate(0, -82px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rightSplashFlies {
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    61% {
+      opacity: 1;
+      transform: rotate(0) translate(0, 0);
+    }
+    61% {
+      transform: rotate(45deg) translate(0, 0);
+    }
+    63% {
+      opacity: 1;
+      transform: rotate(45deg) translate(0, -80px);
+    }
+    64% {
+      transform: rotate(45deg) translate(0, -82px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
